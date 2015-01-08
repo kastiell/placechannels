@@ -1,0 +1,1125 @@
+2014/06/20 19:43:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php
+---
+2014/06/20 19:44:28 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "Z:\home\keep.ua\www\keep\assets" is invalid. Please make sure the directory exists and is writable by the Web server process.' in Z:\home\keep.ua\framework\web\CAssetManager.php:138
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('Z:\home\keep.ua...')
+#1 Z:\home\keep.ua\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 Z:\home\keep.ua\framework\zii\widgets\CListView.php(217): CAssetManager->publish('Z:\home\keep.ua...')
+#3 Z:\home\keep.ua\framework\web\CBaseController.php(147): CListView->init()
+#4 Z:\home\keep.ua\framework\web\CBaseController.php(172): CBaseController->createWidget('zii.widgets.CLi...', Array)
+#5 Z:\home\keep.ua\www\keep\protected\views\post\index.php(9): CBaseController->widget('zii.widgets.CLi...', Array)
+#6 Z:\home\keep.ua\framework\web\CBaseController.php(126): require('Z:\home\keep.ua...')
+#7 Z:\home\keep.ua\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\keep.ua...', Array, true)
+#8 Z:\home\keep.ua\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\keep.ua...', Array, true)
+#9 Z:\home\keep.ua\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#10 Z:\home\keep.ua\www\keep\protected\controllers\PostController.php(136): CController->render('index', Array)
+#11 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#12 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 Z:\home\keep.ua\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#14 Z:\home\keep.ua\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#15 Z:\home\keep.ua\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#16 Z:\home\keep.ua\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#17 Z:\home\keep.ua\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#18 Z:\home\keep.ua\framework\web\CController.php(291): CFilterChain->run()
+#19 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('')
+#21 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#22 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#24 {main}
+REQUEST_URI=/keep/index.php
+---
+2014/06/20 19:45:23 [error] [php] include(TagCloud.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\keep.ua\framework\YiiBase.php:427)
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWidgetFactory.php(146): import()
+#1 Z:\home\keep.ua\framework\web\CBaseController.php(146): CWidgetFactory->createWidget()
+#2 Z:\home\keep.ua\framework\web\CBaseController.php(172): PostController->createWidget()
+#3 Z:\home\keep.ua\www\keep\protected\views\layouts\column2.php(14): PostController->widget()
+#4 Z:\home\keep.ua\framework\web\CBaseController.php(126): require()
+#5 Z:\home\keep.ua\framework\web\CBaseController.php(95): PostController->renderInternal()
+#6 Z:\home\keep.ua\framework\web\CController.php(784): PostController->renderFile()
+#7 Z:\home\keep.ua\www\keep\protected\controllers\PostController.php(136): PostController->render()
+#8 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): PostController->actionIndex()
+#9 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams()
+#10 Z:\home\keep.ua\framework\web\filters\CFilterChain.php(133): PostController->runAction()
+#11 Z:\home\keep.ua\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 Z:\home\keep.ua\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#13 Z:\home\keep.ua\framework\web\filters\CInlineFilter.php(58): PostController->filterAccessControl()
+#14 Z:\home\keep.ua\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#15 Z:\home\keep.ua\framework\web\CController.php(291): CFilterChain->run()
+#16 Z:\home\keep.ua\framework\web\CController.php(265): PostController->runActionWithFilters()
+#17 Z:\home\keep.ua\framework\web\CWebApplication.php(282): PostController->run()
+#18 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 Z:\home\keep.ua\www\keep\index.php(11): CWebApplication->run()
+REQUEST_URI=/keep/index.php?r=post/index
+2014/06/20 19:45:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=site/contact
+---
+2014/06/20 19:46:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=site/contact
+---
+2014/06/20 19:46:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=post/index
+---
+2014/06/20 19:47:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=post/index
+---
+2014/06/20 19:47:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=post/index
+---
+2014/06/20 19:47:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=post/index
+---
+2014/06/20 19:47:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in Z:\home\keep.ua\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/keep/
+---
+2014/06/20 19:58:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in Z:\home\keep.ua\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/keep/
+---
+2014/06/20 19:58:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in Z:\home\keep.ua\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/keep/
+---
+2014/06/20 20:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in Z:\home\keep.ua\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CController.php(270): CController->missingAction('')
+#1 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('')
+#2 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#3 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/keep/
+HTTP_REFERER=http://keep.ua/
+---
+2014/06/20 20:23:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "post/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('post/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=post/index
+HTTP_REFERER=http://keep.ua/keep/
+---
+2014/06/20 20:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "site/index".' in Z:\home\keep.ua\framework\web\CWebApplication.php:286
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('site/index')
+#1 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#3 {main}
+REQUEST_URI=/keep/index.php?r=site/index
+HTTP_REFERER=http://keep.ua/keep/index.php?r=site/index
+---
+2014/06/20 20:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "login".' in Z:\home\keep.ua\framework\web\CController.php:483
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\CController.php(270): CController->missingAction('login')
+#1 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#2 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#3 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#5 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/index
+---
+2014/06/20 20:30:17 [error] [system.db.CDbCommand] CDbCommand::fetch() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'. The SQL statement executed was: SELECT * FROM `tbl_user` `t` WHERE LOWER(username)=? LIMIT 1.
+2014/06/20 20:30:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'username' in 'where clause'' in Z:\home\keep.ua\framework\db\CDbCommand.php:543
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\CDbCommand.php(415): CDbCommand->queryInternal('fetch', Array, Array)
+#1 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(1351): CDbCommand->queryRow()
+#2 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(1456): CActiveRecord->query(Object(CDbCriteria))
+#3 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(18): CActiveRecord->find('LOWER(username)...', Array)
+#4 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#5 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#6 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#7 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#8 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(920): CModel->validate(NULL)
+#9 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(26): CActiveForm::validate(Object(LoginForm))
+#10 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#11 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#16 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#18 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:36:02 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(26): CActiveRecord->__get('username')
+#2 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#3 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#7 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#8 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#12 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#13 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:37:20 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(26): CActiveRecord->__get('username')
+#2 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#3 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(920): CModel->validate(NULL)
+#7 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(26): CActiveForm::validate(Object(LoginForm))
+#8 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#9 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#14 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:37:21 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(26): CActiveRecord->__get('username')
+#2 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#3 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(920): CModel->validate(NULL)
+#7 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(26): CActiveForm::validate(Object(LoginForm))
+#8 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#9 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#11 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#13 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#14 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#15 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#16 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:37:21 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(26): CActiveRecord->__get('username')
+#2 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#3 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#7 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#8 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#12 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#13 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:39:37 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(26): CActiveRecord->__get('username')
+#2 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#3 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#7 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#8 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#12 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#13 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:40:19 [error] [exception.CException] exception 'CException' with message 'Property "User.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(145): CComponent->__get('username')
+#1 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(26): CActiveRecord->__get('username')
+#2 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#3 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#4 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#6 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#7 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#8 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#12 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#13 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#15 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:40:21 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\helpers\CHtml.php(2529): CComponent->__get('email')
+#1 Z:\home\keep.ua\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 Z:\home\keep.ua\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'email', Array)
+#3 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'email', Array)
+#4 Z:\home\keep.ua\www\keep\protected\views\main\login.php(22): CActiveForm->textField(Object(LoginForm), 'email')
+#5 Z:\home\keep.ua\framework\web\CBaseController.php(126): require('Z:\home\keep.ua...')
+#6 Z:\home\keep.ua\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\keep.ua...', Array, true)
+#7 Z:\home\keep.ua\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\keep.ua...', Array, true)
+#8 Z:\home\keep.ua\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(39): CController->render('login', Array)
+#10 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#11 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#16 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#18 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:40:25 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.email" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\framework\web\helpers\CHtml.php(2529): CComponent->__get('email')
+#1 Z:\home\keep.ua\framework\web\helpers\CHtml.php(2252): CHtml::resolveValue(Object(LoginForm), 'email')
+#2 Z:\home\keep.ua\framework\web\helpers\CHtml.php(1434): CHtml::activeInputField('text', Object(LoginForm), 'email', Array)
+#3 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(725): CHtml::activeTextField(Object(LoginForm), 'email', Array)
+#4 Z:\home\keep.ua\www\keep\protected\views\main\login.php(22): CActiveForm->textField(Object(LoginForm), 'email')
+#5 Z:\home\keep.ua\framework\web\CBaseController.php(126): require('Z:\home\keep.ua...')
+#6 Z:\home\keep.ua\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\keep.ua...', Array, true)
+#7 Z:\home\keep.ua\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\keep.ua...', Array, true)
+#8 Z:\home\keep.ua\framework\web\CController.php(782): CController->renderPartial('login', Array, true)
+#9 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(39): CController->render('login', Array)
+#10 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#11 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#15 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#16 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#18 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:41:12 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(49): CComponent->__get('username')
+#1 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#2 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#4 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(920): CModel->validate(NULL)
+#5 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(26): CActiveForm::validate(Object(LoginForm))
+#6 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#7 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#12 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:41:13 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(49): CComponent->__get('username')
+#1 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#2 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#4 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#5 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#6 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#11 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:41:13 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(49): CComponent->__get('username')
+#1 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#2 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#4 Z:\home\keep.ua\framework\web\widgets\CActiveForm.php(920): CModel->validate(NULL)
+#5 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(26): CActiveForm::validate(Object(LoginForm))
+#6 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#7 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#12 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:42:02 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.username" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(49): CComponent->__get('username')
+#1 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#2 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#4 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#5 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#6 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#10 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#11 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#13 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:42:28 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.email" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(18): CComponent->__get('email')
+#1 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#2 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#6 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#7 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#12 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:44:26 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.email" is not defined.' in Z:\home\keep.ua\framework\base\CComponent.php:130
+Stack trace:
+#0 Z:\home\keep.ua\www\keep\protected\components\UserIdentity.php(18): CComponent->__get('email')
+#1 Z:\home\keep.ua\www\keep\protected\models\LoginForm.php(50): UserIdentity->authenticate()
+#2 Z:\home\keep.ua\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 Z:\home\keep.ua\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 Z:\home\keep.ua\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CModel->validate()
+#6 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionLogin()
+#7 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('login')
+#11 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/login')
+#12 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/keep/index.php?r=main/login
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/login
+---
+2014/06/20 20:54:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'mol91mol@ukr.net' for key 'email'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`) VALUES (:yp0, :yp1).
+2014/06/20 20:54:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'mol91mol@ukr.net' for key 'email'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`) VALUES (:yp0, :yp1)' in Z:\home\keep.ua\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(27): CActiveRecord->save(true)
+#3 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionRegistration()
+#4 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('registration')
+#8 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/registrati...')
+#9 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/keep/index.php?r=main/registration
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/registration
+---
+2014/06/20 21:07:54 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`, `ts_reg`) VALUES (:yp0, :yp1, :yp2).
+2014/06/20 21:07:54 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`, `ts_reg`) VALUES (:yp0, :yp1, :yp2)' in Z:\home\keep.ua\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(28): CActiveRecord->save(true)
+#3 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionRegistration()
+#4 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('registration')
+#8 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/registrati...')
+#9 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/keep/index.php?r=main/registration
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/registration
+---
+2014/06/20 21:18:12 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`, `ts_reg`) VALUES (:yp0, :yp1, :yp2).
+2014/06/20 21:18:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`, `ts_reg`) VALUES (:yp0, :yp1, :yp2)' in Z:\home\keep.ua\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CActiveRecord->save(true)
+#3 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionRegistration()
+#4 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('registration')
+#8 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/registrati...')
+#9 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/keep/index.php?r=main/registration
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/registration
+---
+2014/06/20 21:18:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`, `ts_reg`) VALUES (:yp0, :yp1, :yp2).
+2014/06/20 21:18:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user` (`email`, `password`, `ts_reg`) VALUES (:yp0, :yp1, :yp2)' in Z:\home\keep.ua\framework\db\CDbCommand.php:358
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(1077): CDbCommand->execute()
+#1 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(806): CActiveRecord->insert(NULL)
+#2 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(35): CActiveRecord->save()
+#3 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionRegistration()
+#4 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('registration')
+#8 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/registrati...')
+#9 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/keep/index.php?r=main/registration
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/registration
+---
+2014/06/20 21:21:53 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "login".' in Z:\home\keep.ua\framework\base\CComponent.php:266
+Stack trace:
+#0 Z:\home\keep.ua\framework\db\ar\CActiveRecord.php(227): CComponent->__call('login', Array)
+#1 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(38): CActiveRecord->__call('login', Array)
+#2 Z:\home\keep.ua\www\keep\protected\controllers\MainController.php(38): User->login()
+#3 Z:\home\keep.ua\framework\web\actions\CInlineAction.php(49): MainController->actionRegistration()
+#4 Z:\home\keep.ua\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 Z:\home\keep.ua\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 Z:\home\keep.ua\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\home\keep.ua\framework\web\CWebApplication.php(282): CController->run('registration')
+#8 Z:\home\keep.ua\framework\web\CWebApplication.php(141): CWebApplication->runController('main/registrati...')
+#9 Z:\home\keep.ua\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 Z:\home\keep.ua\www\keep\index.php(11): CApplication->run()
+#11 {main}
+REQUEST_URI=/keep/index.php?r=main/registration
+HTTP_REFERER=http://keep.ua/keep/index.php?r=main/registration
+---
+2014/09/28 13:43:52 [error] [php] require_once(Zend/Loader.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (Z:\home\bb.com\www\keep\protected\views\main\video.php:4)
+Stack trace:
+#0 Z:\home\bb.com\framework\web\CBaseController.php(95): MainController->renderInternal()
+#1 Z:\home\bb.com\framework\web\CController.php(869): MainController->renderFile()
+#2 Z:\home\bb.com\framework\web\CController.php(782): MainController->renderPartial()
+#3 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): MainController->render()
+#4 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#5 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 Z:\home\bb.com\framework\web\CController.php(286): MainController->runAction()
+#7 Z:\home\bb.com\framework\web\CController.php(265): MainController->runActionWithFilters()
+#8 Z:\home\bb.com\framework\web\CWebApplication.php(282): MainController->run()
+#9 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 Z:\home\bb.com\www\keep\index.php(11): CWebApplication->run()
+REQUEST_URI=/keep/?r=main/video
+2014/09/28 13:44:51 [error] [php] require_once(Zend/Xml/Security.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Base.php:30)
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Extension\Element.php(27): require_once()
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\FeedEntryParent.php(27): require_once()
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Entry.php(27): require_once()
+#3 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Feed.php(27): require_once()
+#4 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(27): require_once()
+#5 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(27): require_once()
+#6 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\Media.php(27): require_once()
+#7 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(27): require_once()
+#8 Z:\home\bb.com\www\keep\protected\vendors\Zend\Loader.php(134): include_once()
+#9 Z:\home\bb.com\www\keep\protected\vendors\Zend\Loader.php(82): loadFile()
+#10 Z:\home\bb.com\www\keep\protected\views\main\video.php(5): loadClass()
+#11 Z:\home\bb.com\framework\web\CBaseController.php(126): require()
+#12 Z:\home\bb.com\framework\web\CBaseController.php(95): MainController->renderInternal()
+#13 Z:\home\bb.com\framework\web\CController.php(869): MainController->renderFile()
+#14 Z:\home\bb.com\framework\web\CController.php(782): MainController->renderPartial()
+#15 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): MainController->render()
+#16 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#17 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 Z:\home\bb.com\framework\web\CController.php(286): MainController->runAction()
+#19 Z:\home\bb.com\framework\web\CController.php(265): MainController->runActionWithFilters()
+#20 Z:\home\bb.com\framework\web\CWebApplication.php(282): MainController->run()
+#21 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 Z:\home\bb.com\www\keep\index.php(11): CWebApplication->run()
+REQUEST_URI=/keep/?r=main/video
+2014/09/28 13:49:42 [error] [exception.Zend_Gdata_App_AuthException] exception 'Zend_Gdata_App_AuthException' with message 'Authentication with Google failed. Reason: BadAuthentication' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\ClientLogin.php:175
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\views\main\video.php(18): Zend_Gdata_ClientLogin::getHttpClient('Your youtube id...', 'Your password', 'youtube', NULL, 'Your applicatio...', NULL, NULL, 'https://www.goo...')
+#1 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#2 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#3 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#4 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#5 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#6 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#7 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#11 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#12 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 13:51:47 [error] [exception.Zend_Gdata_App_AuthException] exception 'Zend_Gdata_App_AuthException' with message 'Authentication with Google failed. Reason: BadAuthentication' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\ClientLogin.php:175
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\views\main\video.php(18): Zend_Gdata_ClientLogin::getHttpClient('542926338973-g5...', 'cyJd8e2H8RY6eFD...', 'youtube', NULL, 'Your applicatio...', NULL, NULL, 'https://www.goo...')
+#1 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#2 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#3 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#4 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#5 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#6 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#7 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#11 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#12 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#14 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:05:05 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 403
+<HTML>
+<HEAD>
+<TITLE>Invalid format for header X-GData-Key</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>Invalid format for header X-GData-Key</H1>
+<H2>Error 403</H2>
+</BODY>
+</HTML>
+' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:06:15 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 403
+<HTML>
+<HEAD>
+<TITLE>Invalid developer key</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>Invalid developer key</H1>
+<H2>Error 403</H2>
+</BODY>
+</HTML>
+' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:06:32 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 403
+<HTML>
+<HEAD>
+<TITLE>Invalid developer key</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>Invalid developer key</H1>
+<H2>Error 403</H2>
+</BODY>
+</HTML>
+' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:09:33 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 401
+<HTML>
+<HEAD>
+<TITLE>NoLinkedYouTubeAccount</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>NoLinkedYouTubeAccount</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:10:57 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 401
+<HTML>
+<HEAD>
+<TITLE>NoLinkedYouTubeAccount</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>NoLinkedYouTubeAccount</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:12:05 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 401
+<HTML>
+<HEAD>
+<TITLE>NoLinkedYouTubeAccount</TITLE>
+</HEAD>
+<BODY BGCOLOR="#FFFFFF" TEXT="#000000">
+<H1>NoLinkedYouTubeAccount</H1>
+<H2>Error 401</H2>
+</BODY>
+</HTML>
+' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:15:49 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 400
+<?xml version='1.0' encoding='UTF-8'?><errors><error><domain>yt:validation</domain><code>invalid_value</code><location type='xpath'>media:group/media:category[@scheme='http://gdata.youtube.com/schemas/2007/categories.cat']/text()</location></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:17:02 [error] [php] require_once(Zend/Xml/Security.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory (Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Base.php:30)
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Extension\Element.php(27): require_once()
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\FeedEntryParent.php(27): require_once()
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Entry.php(27): require_once()
+#3 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App\Feed.php(27): require_once()
+#4 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(27): require_once()
+#5 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(27): require_once()
+#6 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\Media.php(27): require_once()
+#7 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(27): require_once()
+#8 Z:\home\bb.com\www\keep\protected\vendors\Zend\Loader.php(134): include_once()
+#9 Z:\home\bb.com\www\keep\protected\vendors\Zend\Loader.php(82): loadFile()
+#10 Z:\home\bb.com\www\keep\protected\views\main\video.php(5): loadClass()
+#11 Z:\home\bb.com\framework\web\CBaseController.php(126): require()
+#12 Z:\home\bb.com\framework\web\CBaseController.php(95): MainController->renderInternal()
+#13 Z:\home\bb.com\framework\web\CController.php(869): MainController->renderFile()
+#14 Z:\home\bb.com\framework\web\CController.php(782): MainController->renderPartial()
+#15 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): MainController->render()
+#16 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#17 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams()
+#18 Z:\home\bb.com\framework\web\CController.php(286): MainController->runAction()
+#19 Z:\home\bb.com\framework\web\CController.php(265): MainController->runActionWithFilters()
+#20 Z:\home\bb.com\framework\web\CWebApplication.php(282): MainController->run()
+#21 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#22 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#23 Z:\home\bb.com\www\keep\index.php(11): CWebApplication->run()
+REQUEST_URI=/keep/?r=main/video
+2014/09/28 14:18:39 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 400
+<?xml version='1.0' encoding='UTF-8'?><errors><error><domain>yt:validation</domain><code>invalid_value</code><location type='xpath'>media:group/media:category[@scheme='http://gdata.youtube.com/schemas/2007/categories.cat']/text()</location></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:20:31 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 400
+<?xml version='1.0' encoding='UTF-8'?><errors><error><domain>yt:validation</domain><code>invalid_value</code><location type='xpath'>media:group/media:category[@scheme='http://gdata.youtube.com/schemas/2007/categories.cat']/text()</location></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:22:03 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 400
+<?xml version='1.0' encoding='UTF-8'?><errors><error><domain>yt:validation</domain><code>invalid_value</code><location type='xpath'>media:group/media:category[@scheme='http://gdata.youtube.com/schemas/2007/categories.cat']/text()</location></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:22:21 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 400
+<?xml version='1.0' encoding='UTF-8'?><errors><error><domain>yt:validation</domain><code>invalid_value</code><location type='xpath'>media:group/media:category[@scheme='http://gdata.youtube.com/schemas/2007/categories.cat']/text()</location></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/28 14:22:30 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 400
+<?xml version='1.0' encoding='UTF-8'?><errors><error><domain>yt:validation</domain><code>required</code><location type='xpath'>media:group/media:category[@scheme='http://gdata.youtube.com/schemas/2007/categories.cat']/text()</location></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...', NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(905): Zend_Gdata->performHttpRequest('POST', 'http://gdata.yo...', Array, '<atom:entry xml...', 'application/ato...')
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\YouTube.php(704): Zend_Gdata_App->post(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#3 Z:\home\bb.com\www\keep\protected\views\main\video.php(32): Zend_Gdata_YouTube->getFormUploadToken(Object(Zend_Gdata_YouTube_VideoEntry), 'http://gdata.yo...')
+#4 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#5 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#6 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#7 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#8 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#9 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#10 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#14 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#15 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#17 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/29 17:52:48 [error] [php] include(Zend_Gdata_Analytics.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (Z:\home\bb.com\framework\YiiBase.php:427)
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\views\main\video.php(23): spl_autoload_call()
+#1 Z:\home\bb.com\framework\web\CBaseController.php(126): require()
+#2 Z:\home\bb.com\framework\web\CBaseController.php(95): MainController->renderInternal()
+#3 Z:\home\bb.com\framework\web\CController.php(869): MainController->renderFile()
+#4 Z:\home\bb.com\framework\web\CController.php(782): MainController->renderPartial()
+#5 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): MainController->render()
+#6 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#7 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 Z:\home\bb.com\framework\web\CController.php(286): MainController->runAction()
+#9 Z:\home\bb.com\framework\web\CController.php(265): MainController->runActionWithFilters()
+#10 Z:\home\bb.com\framework\web\CWebApplication.php(282): MainController->run()
+#11 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 Z:\home\bb.com\www\keep\index.php(11): CWebApplication->run()
+REQUEST_URI=/keep/?r=main/video
+2014/09/29 18:00:35 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 401
+<?xml version="1.0" encoding="UTF-8"?><errors xmlns="http://schemas.google.com/g/2005"><error><domain>GData</domain><code>authError</code><location type="header">Authorization</location><internalReason>Invalid Credentials</internalReason></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('GET', 'https://www.goo...', Array, NULL, NULL, NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(880): Zend_Gdata->performHttpRequest('GET', 'https://www.goo...', Array)
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(768): Zend_Gdata_App->get('https://www.goo...', NULL)
+#3 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(210): Zend_Gdata_App->importUrl('https://www.goo...', 'Zend_Gdata_Anal...', NULL)
+#4 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(162): Zend_Gdata_App->getFeed('https://www.goo...', 'Zend_Gdata_Anal...')
+#5 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\Analytics.php(115): Zend_Gdata->getFeed('https://www.goo...', 'Zend_Gdata_Anal...')
+#6 Z:\home\bb.com\www\keep\protected\views\main\video.php(31): Zend_Gdata_Analytics->getDataFeed()
+#7 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#8 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#9 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#10 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#11 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#12 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#13 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#17 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#18 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#20 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/29 18:01:09 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 401
+<?xml version="1.0" encoding="UTF-8"?><errors xmlns="http://schemas.google.com/g/2005"><error><domain>GData</domain><code>authError</code><location type="header">Authorization</location><internalReason>Invalid Credentials</internalReason></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('GET', 'https://www.goo...', Array, NULL, NULL, NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(880): Zend_Gdata->performHttpRequest('GET', 'https://www.goo...', Array)
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(768): Zend_Gdata_App->get('https://www.goo...', NULL)
+#3 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(210): Zend_Gdata_App->importUrl('https://www.goo...', 'Zend_Gdata_Anal...', NULL)
+#4 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(162): Zend_Gdata_App->getFeed('https://www.goo...', 'Zend_Gdata_Anal...')
+#5 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\Analytics.php(115): Zend_Gdata->getFeed('https://www.goo...', 'Zend_Gdata_Anal...')
+#6 Z:\home\bb.com\www\keep\protected\views\main\video.php(31): Zend_Gdata_Analytics->getDataFeed()
+#7 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#8 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#9 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#10 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#11 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#12 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#13 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#17 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#18 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#20 {main}
+REQUEST_URI=/keep/?r=main/video
+---
+2014/09/29 22:57:08 [error] [exception.Zend_Gdata_App_HttpException] exception 'Zend_Gdata_App_HttpException' with message 'Expected response code 200, got 401
+<?xml version="1.0" encoding="UTF-8"?><errors xmlns="http://schemas.google.com/g/2005"><error><domain>GData</domain><code>authError</code><location type="header">Authorization</location><internalReason>Invalid Credentials</internalReason></error></errors>' in Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php:714
+Stack trace:
+#0 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(219): Zend_Gdata_App->performHttpRequest('GET', 'https://www.goo...', Array, NULL, NULL, NULL)
+#1 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(880): Zend_Gdata->performHttpRequest('GET', 'https://www.goo...', Array)
+#2 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(768): Zend_Gdata_App->get('https://www.goo...', NULL)
+#3 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\App.php(210): Zend_Gdata_App->importUrl('https://www.goo...', 'Zend_Gdata_Anal...', NULL)
+#4 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata.php(162): Zend_Gdata_App->getFeed('https://www.goo...', 'Zend_Gdata_Anal...')
+#5 Z:\home\bb.com\www\keep\protected\vendors\Zend\Gdata\Analytics.php(115): Zend_Gdata->getFeed('https://www.goo...', 'Zend_Gdata_Anal...')
+#6 Z:\home\bb.com\www\keep\protected\views\main\video.php(31): Zend_Gdata_Analytics->getDataFeed()
+#7 Z:\home\bb.com\framework\web\CBaseController.php(126): require('Z:\home\bb.com\...')
+#8 Z:\home\bb.com\framework\web\CBaseController.php(95): CBaseController->renderInternal('Z:\home\bb.com\...', NULL, true)
+#9 Z:\home\bb.com\framework\web\CController.php(869): CBaseController->renderFile('Z:\home\bb.com\...', NULL, true)
+#10 Z:\home\bb.com\framework\web\CController.php(782): CController->renderPartial('video', NULL, true)
+#11 Z:\home\bb.com\www\keep\protected\controllers\MainController.php(54): CController->render('video')
+#12 Z:\home\bb.com\framework\web\actions\CInlineAction.php(49): MainController->actionVideo()
+#13 Z:\home\bb.com\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#14 Z:\home\bb.com\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#15 Z:\home\bb.com\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 Z:\home\bb.com\framework\web\CWebApplication.php(282): CController->run('video')
+#17 Z:\home\bb.com\framework\web\CWebApplication.php(141): CWebApplication->runController('main/video')
+#18 Z:\home\bb.com\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#19 Z:\home\bb.com\www\keep\index.php(11): CApplication->run()
+#20 {main}
+REQUEST_URI=/keep/?r=main/video
+---

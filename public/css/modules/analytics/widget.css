@@ -1,0 +1,265 @@
+.wmodule{
+    border: 1px solid #D3D3D3;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+.wmodule .c-title{
+    width: 100%;
+    background-color: #D1D1D1;
+}
+/*
+.c-item:before{
+    content: ' ';
+    background-color: #5f8fc9;
+    color: #5f8fc9;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    float: left;
+    margin: 5px;
+}
+*/
+.percent{
+    font-weight: bold;
+
+}
+
+.c-title{
+    text-transform: uppercase;
+    color: #6D6D6D;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.content_td{
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.wmodule_table .c-title{
+    text-align: center;
+    position: relative;
+}
+
+.wmodule_table{
+    width: 100%;
+
+}
+
+.wmodule_table .title_td{
+    text-align: center;
+    border-bottom: 1px solid #B6B6B6;
+    padding-bottom: 5px;
+}
+
+.wrapper_js{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.sortable_btn{
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+    display: inline-block;
+}
+
+.sortable_btn:before{
+    content: '+';
+    font-size: 14px;
+    color: #000;
+    line-height: 17px;
+}
+
+.sortable_btn:hover:before{
+    font-size: 22px;
+    line-height: 16px;
+}
+
+.count_item_box{
+    color: #000000;
+    display: inline-block;
+}
+
+.prev,.next,.display{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #000;
+}
+
+.alert-block-js{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 266px;
+    border: 1px solid #AFAFAF;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.disable{
+    display: none;
+}
+
+.float_empt{
+    position: relative;
+    float: right;
+    padding: 3px;
+    border: 1px solid #eee;
+    margin-bottom: 5px;
+}
+
+.sortable-ul li{
+    list-style: none;
+}
+
+.sortable-ul{
+    margin: 0;
+}
+
+/*---------------------------------------------- Sortable*/
+
+.item_title{
+    padding: 10px 7px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.item_val{
+    text-align: center;
+}
+
+.c-witem{
+    margin: 2px;
+    border: 1px solid #eee;
+}
+
+.sortable_double .item_val{
+    display: none;
+}
+
+.sortable_double .c-witem{
+    margin: 1px;
+}
+.sortable_double .item_title{
+    padding: 0px 7px;
+    text-decoration: initial;
+    font-size: 11px;
+}
+
+.hover_sortable{
+    background-color: #C4C4C4;
+    border-bottom: 1px solid #979797;
+    border-top: 1px solid #979797;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.tstyle2.wmodule{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+.tstyle1 .c-item-left,.tstyle2 .c-item-left{
+    width: 60%;
+    padding-left: 15px;
+}
+
+.tstyle2 .c-item-right{
+    padding-right: 5px;
+}
+
+.tstyle1 div:nth-child(4n-2),.backgroundee{
+    background-color: #eee;
+}
+
+.tstyle1 div:nth-child(4n-1){
+    background-color: #eee;
+}
+
+.c-item-right{
+    width: 40%;
+    padding-right: 50px;
+    text-align: right;
+}
+
+.ww250{
+    width: 250px;
+}
+
+.ww350{
+    width: 350px;
+}
+
+.tstyle1 .c-title,.tstyle2 .c-title{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.tstyle1.wmodule,.tstyle2.wmodule{
+    padding: 0;
+    float: none;
+    display: inline-block;
+}
+
+.cir{
+    content: ' ';
+    background-color: #5f8fc9;
+    color: #5f8fc9;
+    width: 10px;
+    height: 10px;
+    border-radius: 5px;
+    float: left;
+    margin: 5px;
+}
+
+.cir_desc{
+    display: none;
+}
+
+.cir:hover+.cir_desc{
+    display: block;
+    z-index: 9;
+}
+
+.text_cir,.c-item-left{
+    display: block;
+    width: 100%;
+}
+
+.cir_desc{
+    position: absolute;
+    display: none;
+    width: 150px;
+    background-color: #E9E9E9;
+    font-size: 11px;
+    padding: 2px;
+    border: 1px solid #BDBDBD;
+    top:20px;
+}
+
+.title_cir{
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: underline;
+    font-weight: bold;
+    background-color: #C7C7C7;
+}
+
+.wrap_cir{
+    position: relative;
+}
+
+.wwfull{
+    width: 100%;
+}
